@@ -47,9 +47,6 @@ img {
   margin: auto;
   min-height: 100vh;
 }
-.accordion__radio {
-  display: none;
-}
 .accordion__section {
   display: block;
   padding: 1rem 0;
