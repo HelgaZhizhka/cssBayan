@@ -75,6 +75,7 @@ img {
   transform-origin: center;
 }
 .accordion__container {
+  display: block;
   overflow: hidden;
   height: 0;
 }
