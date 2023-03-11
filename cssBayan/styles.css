@@ -17,8 +17,6 @@ html {
 body {
   margin: 0;
   font-family: var(--font-family);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg);
   font-size: 1rem;
   color: var(--color-text);
@@ -51,14 +49,6 @@ img {
   display: block;
   padding: 1rem 0;
   border-top: 1px solid var(--border-color);
-}
-.accordion__title,
-.accordion__section:active > .accordion__title {
-  color: var(--color-accent);
-}
-.accordion__section:active * {
-  opacity: 0.95;
-  transition: opacity 0.35s ease-out;
 }
 .accordion__title {
   margin: 0;
@@ -121,7 +111,7 @@ img {
     font-size: 100%;
   }
   .page {
-    max-width: 80vw;
+    max-width: 80%;
     padding: 3rem 1.5rem;
   }
   .h1 {
@@ -137,10 +127,22 @@ img {
   .accordion__radio:checked ~ .accordion__section > .accordion__container {
     padding-top: 1.25rem;
   }
+  .accordion__section:active * {
+    opacity: 0.95;
+    transition: opacity 0.35s ease-out;
+  }
+  .accordion__section:active > .accordion__title {
+    color: var(--color-accent);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page {
+    max-width: 50%;
+  }
 }
 @media screen and (min-width: 1920px) {
   .page {
-    max-width: 50vw;
+    max-width: 45%;
   }
 }
 @media (hover: hover) and (pointer: fine) {
