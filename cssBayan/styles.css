@@ -112,7 +112,7 @@ img {
     font-size: 100%;
   }
   .page {
-    max-width: 60vw;
+    max-width: 80vw;
     padding: 3rem 1.5rem;
   }
   .h1 {
@@ -131,7 +131,7 @@ img {
 }
 @media screen and (min-width: 1920px) {
   .page {
-    max-width: 40vw;
+    max-width: 50vw;
   }
 }
 @media (hover: hover) and (pointer: fine) {
