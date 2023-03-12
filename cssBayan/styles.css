@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
 }
 html {
-  font-size: 80%;
+  font-size: 75%;
 }
 
 body {
@@ -37,7 +37,7 @@ img {
   font-weight: 700;
 }
 .h1 {
-  margin: 1rem 0 1.25rem;
+  margin: 0 0 1.25rem;
   font-size: 2rem;
 }
 .page {
@@ -87,9 +87,7 @@ img {
   height: auto;
   padding-top: 1rem;
 }
-.accordion__radio:checked
-  ~ .accordion__section:not(:active)
-  > .accordion__title {
+.accordion__radio:checked ~ .accordion__section > .accordion__title {
   color: var(--color-text);
 }
 .accordion__radio:checked ~ .accordion__section .accordion__icon {
@@ -101,14 +99,14 @@ img {
   transform: scale(1);
   transition: opacity 0.56s linear, transform 0.45s ease-out;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 420px) {
   html {
-    font-size: 95%;
+    font-size: 80%;
   }
 }
 @media screen and (min-width: 820px) {
   html {
-    font-size: 100%;
+    font-size: 90%;
   }
   .page {
     max-width: 80%;
@@ -127,15 +125,11 @@ img {
   .accordion__radio:checked ~ .accordion__section > .accordion__container {
     padding-top: 1.25rem;
   }
-  .accordion__section:active * {
-    opacity: 0.95;
-    transition: opacity 0.35s ease-out;
-  }
-  .accordion__section:active > .accordion__title {
-    color: var(--color-accent);
-  }
 }
 @media screen and (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
   .page {
     max-width: 50%;
   }
@@ -171,5 +165,12 @@ img {
     opacity: 1;
     transform: scale(1);
     transition: opacity 0.56s linear, transform 0.45s ease-out;
+  }
+  .accordion__section:active * {
+    opacity: 0.75;
+    transition: opacity 0.35s ease-out;
+  }
+  .accordion__radio:checked ~ .accordion__section:active > .accordion__title {
+    color: var(--color-accent);
   }
 }
